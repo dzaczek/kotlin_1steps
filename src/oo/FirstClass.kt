@@ -6,7 +6,7 @@ import javax.naming.Name
 /**
  * Created by dzaczek on 5/22/17.
  */
-class Person{
+class Person1{
     val name: String="Sarah"
     var age:  Int = 42
 
@@ -53,7 +53,7 @@ class Person2(name:String,age:Int) {
 
 
 fun main(args: Array<String>) {
-    val person1=Person()
+    val person1=Person1()
     println(person1.age)
     println(person1.name)
     person1.speak()
