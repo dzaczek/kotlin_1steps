@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6012d1-af5f-4b9a-84a0-019e54e0d59a" name="Default" comment="Bokks classs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/oo/House.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin_1ststep/META-INF/Kotlin_1ststep.kotlin_module" afterPath="$PROJECT_DIR$/out/production/Kotlin_1ststep/META-INF/Kotlin_1ststep.kotlin_module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/Books.class" afterPath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/Books.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/BooksKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/BooksKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/FirstClassKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/FirstClassKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/Person.class" afterPath="$PROJECT_DIR$/out/production/Kotlin_1ststep/oo/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/oo/FirstClass.kt" afterPath="$PROJECT_DIR$/src/oo/FirstClass.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/oo/House.kt" afterPath="$PROJECT_DIR$/src/oo/House.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +70,8 @@
       <file leaf-file-name="House.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/oo/House.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="340">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -883,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/oo/House.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="340">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding />
         </state>
       </provider>
