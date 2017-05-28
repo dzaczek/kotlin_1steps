@@ -5,14 +5,15 @@ import java.util.*
 /**
  * Created by dzaczek on 5/23/17.
  */
-open class Person(open val name:String, open var age:Int){
 
-    init {
-        println("clas hPerson created")
-    }
-    fun speak(){
-        println("hello")
-    }
+open  class Normal
+class SubClass:Normal()
+
+
+abstract class Person(open val name:String, open var age:Int){
+
+   abstract  fun speak()
+
     fun greet(name:String){
         println("Hello $name")
     }
@@ -24,19 +25,19 @@ open class Person(open val name:String, open var age:Int){
 }
 
 class Student (override val name:String,override var age:Int, val studentid:Long): Person(name,age) {
-    fun speka(){
+    override fun speak(){
         println("Hi there!")
     }
-    fun speka(name:String){
+      fun speak(name:String){
         println("Hi there! $name ")
     }
 }
 
 class Employee (override val name:String,override  var age:Int):Person(name,age) {
-    fun speka(){
+    override fun speak(){
         println("Good morning")
     }
-    fun speka(name:String){
+    fun speak(name:String){
         println("Hi $name ")
     }
 }
@@ -46,8 +47,9 @@ fun main(args: Array<String>) {
     student.speak()
     println(student.bry())
     val emp=Employee("Pete",33)
-    emp.speka()
+    emp.speak()
+    emp.speak("Bob")
     println(emp.bry())
 //
-    val person=Person("tom",55)
+  //  val person=Person("tom",55)
 }
