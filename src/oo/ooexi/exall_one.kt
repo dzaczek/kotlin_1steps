@@ -5,19 +5,62 @@ package oo.ooexi
  */
 
 interface  Lendable{
-     fun borrow(){
-    printlm("Borrow")
+    fun borrow()
+    fun returniteam()
+    fun status_iteam()
+
+
+}
+
+abstract class Inventory(open var title:String,open var genre:Int,open var publicationyear:Int,open var borrowed:Boolean):Lendable{
+    override fun borrow(){
+        if(borrowed){
+            print("This iteam is borrowed")
+        }else{
+
+            println("You now borrowing this iteam")
+            borrowed=true
+        }
+
+    }
+    override fun status_iteam(){
+        println("Book is Borrowed :$borrowed ")
+    }
+    override fun returniteam(){
+        if(borrowed){
+            println("You now returned  this iteam")
+            borrowed=false
+        }else{
+            println("Sory you cant return this iteam ")
+        }
+
+
     }
 }
 
-abstract class Inventory(open var title:String,open var genre:String,open var publicationyear:Int){
+data class Book(var author:String,
+                override var title: String,
+                override var publicationyear:Int,
+                override var genre: Int):Inventory(title,genre,publicationyear,false) {
+
+}
+data class Dvd(var Lenght:Long,
+               override var title: String,
+               override var genre: Int,
+               override var publicationyear: Int):Inventory(title, genre, publicationyear,false){
 
 }
 
-data class Book(var author:String,override var title: String,override var publicationyear:Int,override var genre: String):Inventory(title,genre,publicationyear) {
+fun main(args: Array<String>) {
+    val book1=Book(title = "Digital Fortess", author = "Dan Brown", publicationyear = 1998, genre = 1998)
+    println(book1)
+    book1.borrow()
+    book1.status_iteam()
+    book1.borrow()
+    book1.status_iteam()
+    book1.returniteam()
+    book1.status_iteam()
+    book1.returniteam()
+    book1.status_iteam()
 
 }
-data class Dvd(var Lenght:Long, override var title: String, override var genre: String, override var publicationyear: Int):Inventory(title, genre, publicationyear){
-
-}
-
