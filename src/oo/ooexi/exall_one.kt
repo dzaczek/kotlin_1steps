@@ -63,4 +63,13 @@ fun main(args: Array<String>) {
     book1.returniteam()
     book1.status_iteam()
 
+    val dvd1=Dvd(Lenght = 3600,title = "The Decline of Western Civilization",genre =1979,publicationyear = 1981)
+    println(dvd1)
+    dvd1.status_iteam()
+    dvd1.borrow()
+    dvd1.returniteam()
+
+
+
 }
+
